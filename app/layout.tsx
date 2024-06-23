@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
-import "./globals.css";
-import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
-import ModalProvider from "@/providers/modal-provider";
+import type { Metadata } from 'next';
+import { Urbanist } from 'next/font/google';
+import './globals.css';
+import Footer from '@/components/footer';
+import Navbar from '@/components/navbar';
+import ModalProvider from '@/providers/modal-provider';
 
-const font = Urbanist({ subsets: ["latin"] });
+const font = Urbanist({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Toko Online",
-  description: "Toko Online",
+  title: 'E-Com Store',
+  description: 'E-Com Store',
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }
